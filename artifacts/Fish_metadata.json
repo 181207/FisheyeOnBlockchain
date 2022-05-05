@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_jsonElement",
+						"type": "string"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"retrieve(uint256)": {
+					"details": "Return value ",
+					"params": {
+						"_id": "id to data"
+					},
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256,string)": {
+					"details": "Store data to mapping",
+					"params": {
+						"_id": "id to data",
+						"_jsonElement": "string data to store"
+					}
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract.sol": "Fish"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract.sol": {
+			"keccak256": "0xb7974d2576a49fef6916dec0f3b4bd1514746a0364e6102867f96f3de1653d07",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a033675c607cca3971de5b0ca6e017ed0c5e742a00c2271819c411f911c4562a",
+				"dweb:/ipfs/QmSL47K5EjWtgauoTbiHr5XsgTkXRgn3NuBNUBzNJAFKv9"
+			]
+		}
+	},
+	"version": 1
+}

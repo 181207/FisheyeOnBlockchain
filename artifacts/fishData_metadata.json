@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_jsonElement",
+						"type": "string"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"retrieve(uint256)": {
+					"details": "Return value ",
+					"params": {
+						"_id": "id to data"
+					},
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256,string)": {
+					"details": "Store data to mapping",
+					"params": {
+						"_id": "id to data",
+						"_jsonElement": "string data to store"
+					}
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract.sol": "fishData"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract.sol": {
+			"keccak256": "0x0521c9e81af2e9b727912fc7308750bbc3ebca4dcffe3e76931281af0851e5ee",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e605834fa2f31bddc22693cabb74ad58b6f73894245198f6e3912df226933412",
+				"dweb:/ipfs/QmPTuuABDHuxThXCYvJruZGkyGnburW2ctGsM4zcLvJxDH"
+			]
+		}
+	},
+	"version": 1
+}

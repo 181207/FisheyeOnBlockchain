@@ -1,0 +1,103 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_jsonElement",
+						"type": "string"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"retrieve(uint256)": {
+					"details": "Return value ",
+					"params": {
+						"_id": "id to data"
+					},
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256,string)": {
+					"details": "Store data to mapping",
+					"params": {
+						"_id": "id to data",
+						"_jsonElement": "string data to store"
+					}
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract.sol": "fish"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract.sol": {
+			"keccak256": "0x86815442e1c245559715bc5f34aa9ab3dbd1d777744a2270389424d3cc8c7b26",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://948f10f322f3a60f376a78adbffdff295ac6dc6c31ac017d17321d7864c08893",
+				"dweb:/ipfs/QmbCFQsn2cfQbK4FjLKqFDa4HaCUi2XFB8z8T4L1aF4YDp"
+			]
+		}
+	},
+	"version": 1
+}
