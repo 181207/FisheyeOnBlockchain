@@ -6,11 +6,16 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_id",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"name": "retrieve",
@@ -27,9 +32,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "_id",
-						"type": "uint256"
+						"type": "string"
 					},
 					{
 						"internalType": "string",
@@ -48,7 +53,7 @@
 			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {
-				"retrieve(uint256)": {
+				"retrieve(string)": {
 					"details": "Return value ",
 					"params": {
 						"_id": "id to data"
@@ -57,7 +62,7 @@
 						"_0": "value of 'number'"
 					}
 				},
-				"store(uint256,string)": {
+				"store(string,string)": {
 					"details": "Store data to mapping",
 					"params": {
 						"_id": "id to data",
@@ -91,11 +96,11 @@
 	},
 	"sources": {
 		"contract.sol": {
-			"keccak256": "0x0521c9e81af2e9b727912fc7308750bbc3ebca4dcffe3e76931281af0851e5ee",
+			"keccak256": "0x2fd54525265da053c8060c33480d4ee523b19477d7abacb64250f1ef7be848ef",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e605834fa2f31bddc22693cabb74ad58b6f73894245198f6e3912df226933412",
-				"dweb:/ipfs/QmPTuuABDHuxThXCYvJruZGkyGnburW2ctGsM4zcLvJxDH"
+				"bzz-raw://e3db338e4b0848dd254c4950f91fff7b425fe385061d5cb17259beb6074d15ef",
+				"dweb:/ipfs/QmSDoxpEJv2Fbcw1v3TturEMfCVjTf169tMZq37pPh2QLe"
 			]
 		}
 	},
