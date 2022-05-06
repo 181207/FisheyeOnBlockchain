@@ -3,14 +3,12 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
+ * @title FisheyeOnBlockchain
+ * @dev Store & retrieve fish data in a map
  */
-contract fishData {
+contract FisheyeOnBlockchain {
     //string storaga value;
     mapping(string => string) data;
-    uint256 number;
     address owner;
 
     constructor(){
@@ -18,22 +16,23 @@ contract fishData {
     }
 
     /**
-     * @dev Store data to mapping
+     * @dev Store data
      * @param _id id to data
      * @param _jsonElement string data to store
 
      */
     function store(string memory _id,string memory _jsonElement) external {
+        //Only the creater of the contract is allowed to store data.
         require(msg.sender == owner);
         data[_id]=_jsonElement;
     }
 
     /**
-     * @dev Return value 
+     * @dev Retrieve data
      * @param _id id to data
-     * @return value of 'number'
+     * @return string of the data
      */
-    function retrieve(string memory _id) public view returns (string memory) {
+    function retrieve(string memory _id) external view returns (string memory) {
         return data[_id];
     }
 }

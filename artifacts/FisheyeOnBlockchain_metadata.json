@@ -49,28 +49,27 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
+			"details": "Store & retrieve fish data in a map",
 			"kind": "dev",
 			"methods": {
 				"retrieve(string)": {
-					"details": "Return value ",
+					"details": "Retrieve data",
 					"params": {
 						"_id": "id to data"
 					},
 					"returns": {
-						"_0": "value of 'number'"
+						"_0": "string of the data"
 					}
 				},
 				"store(string,string)": {
-					"details": "Store data to mapping",
+					"details": "Store data",
 					"params": {
 						"_id": "id to data",
 						"_jsonElement": "string data to store"
 					}
 				}
 			},
-			"title": "Storage",
+			"title": "FisheyeOnBlockchain",
 			"version": 1
 		},
 		"userdoc": {
@@ -81,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract.sol": "fishData"
+			"contract.sol": "FisheyeOnBlockchain"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -96,11 +95,11 @@
 	},
 	"sources": {
 		"contract.sol": {
-			"keccak256": "0xfe29403697e0398561cde0ab74835f2e22aee78f15b04e6af8993ecf8401ac38",
+			"keccak256": "0x328b04ff7b7903fd9e172f80bcbb61ecadca0d957eade7de91fca026f6e59fc7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7ddefe4eef058c4b0eee9253dc9547bf30b52d3de5a57067364f0657605ae2cc",
-				"dweb:/ipfs/Qmf5d2G1axcijdKhwkKA2DLaNheaBY7cLXAaPz1sFPGx4g"
+				"bzz-raw://2a114675b99f2642b5b2caa348377177e2f4bbf145f1f0ed7f62c1bce13b6a7d",
+				"dweb:/ipfs/QmNuLVNvzocoHjM38z6QgJJSFHJSicwhXJFLMaCDtvCdrh"
 			]
 		}
 	},

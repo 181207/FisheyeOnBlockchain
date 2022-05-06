@@ -54,23 +54,23 @@
 			"kind": "dev",
 			"methods": {
 				"retrieve(string)": {
-					"details": "Return value ",
+					"details": "Retrieve data",
 					"params": {
 						"_id": "id to data"
 					},
 					"returns": {
-						"_0": "value of 'number'"
+						"_0": "string of the data"
 					}
 				},
 				"store(string,string)": {
-					"details": "Store data to mapping",
+					"details": "Store data",
 					"params": {
 						"_id": "id to data",
 						"_jsonElement": "string data to store"
 					}
 				}
 			},
-			"title": "Storage",
+			"title": "FishEyeOnBlockchain",
 			"version": 1
 		},
 		"userdoc": {
@@ -81,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract.sol": "fishData"
+			"contract.sol": "FishEyeOnBlockchain"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"contract.sol": {
-			"keccak256": "0xfe29403697e0398561cde0ab74835f2e22aee78f15b04e6af8993ecf8401ac38",
+			"keccak256": "0xd608fdaee57b945e84ca298f125453978f2b068520b795c00100ce412dcadaaf",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7ddefe4eef058c4b0eee9253dc9547bf30b52d3de5a57067364f0657605ae2cc",
-				"dweb:/ipfs/Qmf5d2G1axcijdKhwkKA2DLaNheaBY7cLXAaPz1sFPGx4g"
+				"bzz-raw://a794af8ffdaeb300b25793ac95ce8049b835e45ef69542d0999fc07f5fce8f2d",
+				"dweb:/ipfs/QmRsP7JPrqPLqFDysvrb15xNGX6KttfyX2QvUey7KRucuZ"
 			]
 		}
 	},
